@@ -26,7 +26,13 @@ class GeminiRepository implements IGeminiRepository
   {
     $response = $this->geminiClient->geminiPro()->generateContent(new TextPart($question));
 
-    $filteredResponse = $response->candidates[0]->content->parts[0]->text;
+    // $filteredResponse = $response->candidates[0]->content->parts[0]->text;
+
+    if (isset($response->candidates[0]->content->parts[0]->text)) {
+      $filteredResponse = $response->candidates[0]->content->parts[0]->text;
+    } else {
+        return 'No content found';
+    }
 
     return $filteredResponse;
   }
