@@ -43,7 +43,7 @@ class RandomGreetingsController extends Controller
     /**
      * Saves a greeting that can be used later when fetching random greetings.
      */
-    public function addNewGreetings(Request $request)
+    public function addNewGreetings(Request $request) : JsonResponse
     {
         $field = $request->validate([
             'greetings' => 'required|string'
