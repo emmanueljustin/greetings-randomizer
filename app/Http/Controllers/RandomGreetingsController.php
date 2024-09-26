@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\RandomGreetings;
 use App\Services\RandomGreetingsService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
