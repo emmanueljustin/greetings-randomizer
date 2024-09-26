@@ -4,7 +4,6 @@ namespace App\Repositories\GeminiRepository;
 
 use GeminiAPI\Client;
 use GeminiAPI\Resources\Parts\TextPart;
-use Illuminate\Http\JsonResponse;
 
 class GeminiRepository implements IGeminiRepository
 {
