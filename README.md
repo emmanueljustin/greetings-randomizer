@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/87d00e0a-1b4d-4d66-9513-13f43e1bf1fc" alt="train" width="100%"/>
+<img src="https://github.com/user-attachments/assets/87d00e0a-1b4d-4d66-9513-13f43e1bf1fc" alt="train" width="500"/>
 
 <h1 align="center">Welcome to my laravel 2.0</h1>
 
