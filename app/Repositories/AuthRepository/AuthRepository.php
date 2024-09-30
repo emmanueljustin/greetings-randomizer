@@ -45,7 +45,7 @@ class AuthRepository implements IAuthRepository
         'status' => 'ok',
         'message' => 'Successfully logged in.',
         'data' => [
-          'token' => $token,
+          'token' => "Bearer {$token}",
           'userData' => $existingUser,
         ],
       ];
@@ -73,7 +73,7 @@ class AuthRepository implements IAuthRepository
       'status' => 'ok',
       'messsage' => 'Created account succesfully.',
       'data' => [
-        'token' => $token,
+        'token' => "Bearer {$token}",
         'userData' => $user,
       ],
     ];
